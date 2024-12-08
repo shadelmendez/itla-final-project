@@ -34,8 +34,6 @@ a{
     
 }
 
-
-
 .login__col{
     display: flex;
     align-items: center;
@@ -140,13 +138,13 @@ a{
     padding: .3rem 1rem;
 }
 
-#login .login__col:nth-child(2) .login__col--client a{
+#login .login__col:nth-child(2) .login__col--client label{
     cursor: pointer;
     color: var(--black); 
     transition: color 0.2s ease-in;
 }
 
-#login .login__col:nth-child(2) .login__col--client a:hover{ 
+#login .login__col:nth-child(2) .login__col--client label:hover{ 
     color: #fff;
 }
 
@@ -159,3 +157,4 @@ a{
     display: flex;
     
   }
+
