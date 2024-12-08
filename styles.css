@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --black: #0D0D0D;
+    --white: #F8F8F8;
+    --grey: #F2F2F2;
+    --dark-green: #4E7317;
+    --neo-green: #B2F252;
+    --light-green: #CBF291;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--grey);
+    font-family: "Afacad Flux", serif;
+    
+}
+
+.login__col{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#login .login__col:nth-child(1){
+    width: 45%;
+    padding: 4rem;
+    transition: color 0.2s ease-in-out;
+}
+
+#login .login__col:nth-child(1):hover{
+    background-color: var(--black);
+}
+
+.login__info h1{
+    font-size: 5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+
+.login__info div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login__info div:nth-child(2) a{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5rem;
+    transition: color 0.2s ease-in-out;
+    color: var(--black);
+}
+
+.login__info div:nth-child(2) a:hover{
+    color: var(--neo-green);
+}
+
+#login .login__col:nth-child(2){
+    background-image: url('./assets/img/car2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    position: relative;
+    
+}
+
+#login .login__col:nth-child(2) form{
+    background-color: #fff;
+    width: 65%;
+    height: 50%;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2rem 2rem 4rem 2rem;
+    
+
+}
+
+#login .login__col:nth-child(2) form input{
+    border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+    
+}
+
+.form-group{
+    margin-top: 2rem;
+}
+
+#login .login__col:nth-child(2) form button{
+    background-color: var(--black);
+    color: #fff;
+    width: 80%;
+    position: absolute;
+    bottom: 1.5rem; 
+    transition: color 0.2s ease-in-out;
+    
+}
+
+#login .login__col:nth-child(2) form button:hover{
+    background-color: var(--neo-green);
+}
+
+
+#login .login__col:nth-child(2) .login__col--client{
+    background-color: #B2F252;
+    text-align: right;
+    width: 80%;
+    padding: .3rem 1rem;
+}
+
+#login .login__col:nth-child(2) .login__col--client label{
+    cursor: pointer;
+    color: var(--black); 
+    transition: color 0.2s ease-in;
+}
+
+#login .login__col:nth-child(2) .login__col--client label:hover{ 
+    color: #fff;
+}
+
+
+.transparent-div {
+    width: 65%;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    display: flex;
+    
+  }
+
